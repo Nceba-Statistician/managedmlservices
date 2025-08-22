@@ -1,0 +1,56 @@
+:root {
+  --body-colour: #e4e9f7;
+  --sidebar-color: #fff;
+}
+.body {
+  background: var(--body-colour);
+  height: 100vh;
+}
+
+.header {
+  background-color: blueviolet;
+}
+
+.sidebar {
+  position: fixed;
+  background: var(--sidebar-color);
+  box-shadow: 8px 8px 20px rgb(54, 71, 78);
+  top: 0px;
+  left: 20px;
+  height: 100%;
+  width: 300px;
+}
+
+.sidebar .image-text {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .image-text img {
+  padding: 1rem;
+  width: 40px;
+}
+
+.sidebar .image {
+  display: flex;
+  align-items: center;
+  min-width: 40px;
+}
+
+.sidebar .giv {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.sidebar .toggle {
+  position: absolute;
+  display: flex;
+  background-color: aqua;
+  border-radius: 50%;
+  font-size: xx-large;
+  top: 3%;
+  right: -8px;
+}
