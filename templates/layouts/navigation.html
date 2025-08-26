@@ -1,0 +1,134 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="body">
+    <nav class="sidebar" id="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="{%static "assets/sidebar-icons/deep-learning.png" %}"
+            alt="logo" />
+          </span>
+          <div class="text-header">
+            <span>Managed ML Services</span>
+          </div>
+        </div>
+          <i class="bx bx-chevron-left toggle"></i>
+      </header>
+      <ul>    
+        <details>
+          <summary>
+            <a>
+              <li>
+              <i class="bx bx-chevron-right"></i>
+              Home
+              </li>
+              </a
+            >
+          </summary>
+          <ul>
+
+              <details>
+                <summary>
+                <a><li>
+                  <i class="bx bx-chevron-right"></i>
+                  Get Data
+                  </li>
+                </a>
+                </summary>
+                <ul>
+                  <li>Import</li>
+                </ul>
+              </details>
+
+              <details>
+                <summary>
+                  <a><li>
+                    <i class="bx bx-chevron-right"></i>
+                    Transform
+                    </li>
+                  </a>
+                </summary>
+                <ul>
+                  <li>Sample</li>
+                  <li>Field Values</li>
+                  <li>Field Data Types</li>
+                  <li>Imputation</li>
+                </ul>
+              </details>
+
+            </ul>  
+
+        </details>
+
+        <details>
+          <summary>
+            <a>
+              <li>
+              <i class="bx bx-chevron-right"></i>
+              Dashboard
+              </li>
+              </a>
+          </summary>
+          <ul>
+            <li>View</li>
+            <li>Design</li>
+            <li>Manage</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>
+            <a>
+              <li>
+              <i class="bx bx-chevron-right"></i>
+              Models
+              </li>
+              </a>
+          </summary>
+
+          <ul>
+              <details>
+              <summary>
+                <a><li>
+                  <i class="bx bx-chevron-right"></i>
+                  Model Builder
+                  </li>
+                </a>
+                </summary>
+                <ul>
+                  <li>Correlations</li>
+                  <li>Statistical Distribution</li>
+                  <li>Builder</li>
+                </ul>
+            </details>
+    
+            <details>
+              <summary>
+                <a><li>
+                  <i class="bx bx-chevron-right"></i>
+                  Predictions
+                </li>
+                </a>
+                </summary>
+                <ul>
+                  <li>Traditional Statistical Models</li>
+                  <li>Neural Networks</li>
+                </ul>
+            </details>
+      </ul>
+    </nav>
+  </body>
+</html>

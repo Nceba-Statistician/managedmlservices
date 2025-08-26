@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ML Services Admin</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static "css/style.css" %}" />
+  </head>
+  <body class="body-login">
+    <div class="form-group-login">
+      <form method="post">
+        {% csrf_token %}
+        <div class="form-header">ML Services</div>
+        <br />
+        <div class="form-body">
+          <label for="username">Username</label>
+          <br />
+          <input type="text" id="username" name="username"></input>
+        </div>
+        <br />
+        <button class="form-button" type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
