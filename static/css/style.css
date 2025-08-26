@@ -2,6 +2,7 @@
   --background-color: #e4e9f7;
   --sign--background: #25838e;
   --shadow--color: rgb(7, 26, 168);
+  --gray--color: lightgray;
 }
 
 .body {
@@ -106,12 +107,12 @@ li {
 .body-login .form-group-login {
   background-color: white;
   justify-content: center;
-  margin: 25px;
+  margin: 65px;
   padding: 30px;
   width: 250px;
   height: 400px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px var(--shadow--color);
 }
 
 .body-login .form-header {
@@ -119,23 +120,28 @@ li {
   justify-content: center;
   font-weight: bolder;
   font-size: large;
-  box-shadow: 0 8px 10px var(--background-color);
+  box-shadow: 0 6px 12px var(--shadow--color);
   padding: 15px;
   color: var(--shadow--color);
+  background-color: var(--gray--color);
+  border-radius: 8px;
 }
 
 .body-login .form-body {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 8px 10px var(--background-color);
+  box-shadow: 0 6px 12px var(--shadow--color);
   padding: 15px;
   color: var(--shadow--color);
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: var(--gray--color);
 }
 
 .body-login .form-button {
+  flex-direction: column;
   background-color: var(--background-color);
   box-shadow: 0 4px 8px rgb(7, 26, 168);
-  margin-top: 120px;
   width: 250px;
   padding: 15px;
   border-style: none;
