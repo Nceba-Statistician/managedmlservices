@@ -9,5 +9,8 @@
     "Javascript": "Javascriptreact"
   },
   "emmet.triggerExpansionOnTab": true,
-  "html-css-class-completion.enableEmmetSupport": true
+  "html-css-class-completion.enableEmmetSupport": true,
+  "python-envs.defaultEnvManager": "ms-python.python:system",
+  "python-envs.defaultPackageManager": "ms-python.python:pip",
+  "python-envs.pythonProjects": []
 }

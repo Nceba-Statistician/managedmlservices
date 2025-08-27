@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,20 +10,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{% static "css/style.css" %}" />
   </head>
-  <body class="body-login">
+  <body
+  style="
+  background-image: url('{% static "assets/login/loginJPEG.jpg" %}');
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  ">
     <div class="form-group-login">
       <form method="post">
         {% csrf_token %}
         <div class="form-header">ML Services</div>
         <br />
         <div class="form-body">
-          <label for="username">Username</label>
-          <br />
-          <input type="text" id="username" name="username" required></input>
+          <input type="text" id="username-login" name="username" placeholder="Username" required></input>
           <br/>
-          <label for="password">Password</label>
-          <br />
-          <input type="password" id="password" name="password" required></input>
+          <input type="password" id="password-login" name="password" placeholder="Password" required></input>
         </div>
         <br />
         <button class="form-button" type="submit">Login</button>
